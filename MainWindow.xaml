@@ -1,0 +1,19 @@
+﻿<Window x:Class="CookieClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CookieClicker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle Height="71" Stroke="Black" Margin="24,52,697,311"/>
+        <Button x:Name ="clickButton" Content="Clicker" HorizontalAlignment="Center" VerticalAlignment="Center" Click="cookieClick"/>
+        <Label x:Name="cookieText" Content="Cookies: " HorizontalAlignment="Center" Margin="0,159,0,0" VerticalAlignment="Top" Width="301" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Shop" HorizontalAlignment="Left" Margin="40,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Auto Clickers" HorizontalAlignment="Left" Margin="24,60,0,0" VerticalAlignment="Top"/>
+        <Button Content="Buy" HorizontalAlignment="Left" Margin="33,91,0,0" VerticalAlignment="Top" Click="buyAuto" Width="56" Height="24"/>
+        <Label Content="Better Clicks" HorizontalAlignment="Left" Margin="28,128,0,0" VerticalAlignment="Top"/>
+        <Button Content="Buy" HorizontalAlignment="Left" Margin="33,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.301,-0.235" Width="56" Height="28" Click="buyBetterClicks"/>
+    </Grid>
+</Window>
