@@ -30,6 +30,7 @@ namespace CookieClicker
         int currentCookies;
         int clickPower = 1;
         int currentAutos = 0;
+        int betterClickCount = 0;
         int autoClickerPrice = 50;
         int betterClickPrice = 80;
 
@@ -69,6 +70,9 @@ namespace CookieClicker
                 currentAutos++;
                 autoClickerPrice += 10;
                 cookieText.Content = "Cookies: " + currentCookies.ToString();
+                afkClickText.Content = "Current AFK Clicks: " + currentAutos.ToString();
+                currentAFKClicks.Content = "Auto Clickers: " + currentAutos.ToString();
+                buy1.Content = "Buy \n Cost: " + autoClickerPrice.ToString();
 
                 if (autoTimer.IsEnabled == false)
                 {
@@ -86,6 +90,9 @@ namespace CookieClicker
                 clickPower++;
                 betterClickPrice += 20;
                 cookieText.Content = "Cookies: " + currentCookies.ToString();
+                clickPowerText.Content = "Current Click Power: " + clickPower.ToString();
+                currentBetterClicks.Content = "Better Clicks: " + betterClickCount.ToString();
+                buy2.Content = "Buy \n Cost: " + betterClickPrice.ToString();
             }
         }
     }
