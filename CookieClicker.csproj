@@ -6,4 +6,17 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="cookie.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdonisUI" Version="1.16.0" />
+    <PackageReference Include="ModernWpfUI" Version="0.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cookie.png" />
+  </ItemGroup>
+
 </Project>
