@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieClickerSharp", "CookieClickerSharp.csproj", "{670FAC71-868C-4B4E-A748-42003E73980B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|ARM.Build.0 = Debug|ARM
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|ARM.Deploy.0 = Debug|ARM
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|ARM64.Build.0 = Debug|ARM64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|x64.ActiveCfg = Debug|x64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|x64.Build.0 = Debug|x64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|x64.Deploy.0 = Debug|x64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|x86.ActiveCfg = Debug|x86
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|x86.Build.0 = Debug|x86
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Debug|x86.Deploy.0 = Debug|x86
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|ARM.ActiveCfg = Release|ARM
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|ARM.Build.0 = Release|ARM
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|ARM.Deploy.0 = Release|ARM
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|ARM64.ActiveCfg = Release|ARM64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|ARM64.Build.0 = Release|ARM64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|ARM64.Deploy.0 = Release|ARM64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|x64.ActiveCfg = Release|x64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|x64.Build.0 = Release|x64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|x64.Deploy.0 = Release|x64
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|x86.ActiveCfg = Release|x86
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|x86.Build.0 = Release|x86
+		{670FAC71-868C-4B4E-A748-42003E73980B}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F764A0C-B4BF-41C5-8ECF-9B41E69388F1}
+	EndGlobalSection
+EndGlobal
