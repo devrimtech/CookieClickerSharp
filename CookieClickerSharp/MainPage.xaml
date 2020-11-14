@@ -1,18 +1,25 @@
 ﻿<Page
-    x:Class="CookieClickerSharp.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:CookieClickerSharp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    <Grid Margin="0,10,1223,0">
-        <FlyoutBase.AttachedFlyout>
-            <MenuFlyout/>
-        </FlyoutBase.AttachedFlyout>
-        <Button Content="Store" Margin="0,51,0,0" VerticalAlignment="Top" Width="112" HorizontalAlignment="Center" Height="84" FontSize="36"/>
-
+    xmlns:appmodel="using:Windows.ApplicationModel" xmlns:Windows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 7)"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls" xmlns:muxc="using:Windows.UI.Xaml.Controls"
+    x:Class="CookieClickerSharp.MainPage"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/main-background.png"/>
+    </Page.Background>
+    <Page.Resources>
+        <AcrylicBrush x:Key="NavigationViewExpandedPaneBackground" BackgroundSource="HostBackdrop" TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.8" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+    </Page.Resources>
+    <Grid>
+        <NavigationView>
+            <NavigationView.MenuItems>
+                <NavigationViewItem Tag="shop" Icon="Shop" Content="Shop"/>
+                <NavigationViewItem Tag="upgrades" Icon="SolidStar" Content="Upgrades"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
     </Grid>
 </Page>

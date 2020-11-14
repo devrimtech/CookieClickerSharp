@@ -5,8 +5,11 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -71,6 +74,8 @@ namespace CookieClickerSharp
                 // Ensure the current window is active
                 Window.Current.Activate();
             }
+
+            this.ExtendAcrylicIntoTitleBar();
         }
 
         /// <summary>
@@ -96,5 +101,13 @@ namespace CookieClickerSharp
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+        private void ExtendAcrylicIntoTitleBar()
+        {
+            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+            var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
+            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+        }
+
     }
 }
